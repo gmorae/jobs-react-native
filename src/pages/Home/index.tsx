@@ -76,9 +76,9 @@ const Home: React.FC = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Hello dev</Text>
-        <Text style={styles.description}>Find your Dream Jobs</Text>
+        <Text style={styles.description}>Find your Dream job vacancy</Text>
         <View style={styles.itemsContainer}>
-          <Text style={styles.searchTitle}>Select a category</Text>
+          <Text style={styles.searchTitle}>Select the category</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {categories.map((category) => (
               <TouchableOpacity
@@ -126,7 +126,7 @@ const Home: React.FC = () => {
                 <View style={styles.buttonIcon}>
                   <Icon name="arrow-right" color="#FFF" size={24} />
                 </View>
-                <Text style={styles.buttonText}>Detalhes</Text>
+                <Text style={styles.buttonText}>Details</Text>
               </RectButton>
             </View>
           )}
