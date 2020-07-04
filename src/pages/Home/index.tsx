@@ -100,7 +100,7 @@ const Home: React.FC = () => {
         </View>
       </View>
       <View style={styles.content}>
-        <Text style={styles.titleJob}>All jobs</Text>
+              <Text style={styles.titleJob}>All job openings {selectedCategory.length === 1 && `- ${selectedCategory}`}</Text>
         <FlatList
           data={jobs}
           keyExtractor={(id) => String(id.id)}
